@@ -9,13 +9,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        <header>
           <p>
             Fibonaci Application
           </p>
-          <Link to="/">Home</Link> 
-          <Link to="/otherpage">Other Page</Link>
+          <div><Link to="/">Home</Link> </div>
+          <div><Link to="/otherpage">Other Page</Link></div>
         </header>
+        <br/>
         <div>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
