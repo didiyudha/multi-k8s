@@ -11,12 +11,12 @@ script:
 
 after_success:
   - docker build -t didiyudha/multi-client ./client
-  - docker build -t didiyudha/multi-ngnix ./nginx
+  - docker build -t didiyudha/multi-nginx ./nginx
   - docker build -t didiyudha/multi-server ./server
   - docker build -t didiyudha/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push didiyudha/multi-client
-  - docker push didiyudha/multi-ngnix
+  - docker push didiyudha/multi-nginx
   - docker push didiyudha/multi-server
   - docker push didiyudha/multi-worker
 
