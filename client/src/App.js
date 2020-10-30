@@ -13,7 +13,7 @@ function App() {
           <p>
             Fibonaci Application
           </p>
-          <Link to="/">Home</Link>
+          <Link to="/">Home</Link> 
           <Link to="/otherpage">Other Page</Link>
         </header>
         <div>
