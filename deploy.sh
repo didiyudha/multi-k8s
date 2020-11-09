@@ -7,7 +7,9 @@ docker push didiyudha/multi-worker:latest
 docker push didiyudha/multi-client:$SHA
 docker push didiyudha/multi-server:$SHA
 docker push didiyudha/multi-worker:$SHA
+
 kubectl apply -f k8s
+
 kubectl set image deployments/server-deployment server=didiyudha/multi-server:$SHA
 kubectl set image deployments/client-deployment client=didiyudha/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=didiyudha/multi-worker:$SHA
