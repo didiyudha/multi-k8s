@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <header>
           <p>
-            Fibonaci Application
+            Fibonaci Application Kubernetes Version
           </p>
           <div><Link to="/">Home</Link> </div>
           <div><Link to="/otherpage">Other Page</Link></div>
